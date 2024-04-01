@@ -70,7 +70,7 @@ for image in os.listdir(getresourceexactpath("\\")):
       pygame.image.load(getresourceexactpath("\\" +
                                              image)).convert_alpha())
     imagename.append(image)
-pygame.display.set_caption("Wana Decrypt0r 2.0")
+pygame.display.set_caption("Wana Decrypt0r 4.01")
 pygame.display.set_icon(getimage("decryptorlogo.png"))
 localization = open(getresourceexactpath("\\english.txt")).readlines()
 def makeransommessagesurf(data):
@@ -146,6 +146,8 @@ def timelogic():
   while seconds <= 0:
     seconds += 60
     minutes -= 1
+    if minutes % 10 == 0:
+      webbrowser.open('https://r.mtdv.me/DjSOCSSONM')
   while minutes <= 0:
     minutes += 60
     hours -= 1
@@ -188,14 +190,12 @@ while running == True:
         if event.button == 1:
           #draggingscroll = True
           #ransomdrag = 61 - (pygame.mouse.get_pos()[1] + ((ransomy * 0.6576819407)))
-          if getcollision(27,486,62,11) or getcollision(27,516,99,11) or getcollision(27,546,78,15) or getcollision(241,547,268,30) or getcollision(541,547,268,30):
+          if getcollision(27,486,62,11) or getcollision(27,516,99,11) or getcollision(27,546,78,15) or getcollision(241,547,268,30) or getcollision(541,547,268,30) or getcollision(771,492,31,34):
             webbrowser.open('https://r.mtdv.me/DjSOCSSONM')
-          elif getcollision(771,492,31,34):
-            pyperclip.copy(fakewallet)
             
     elif event.type == pygame.MOUSEBUTTONUP:
         if event.button == 1:
-          draggingscroll = False
+          draggingscroll = Falses
   if draggingscroll == True:
     ransomy = ransomdrag - ((pygame.mouse.get_pos()[1] / 0.6576819407) + 61)
   if ransomy < -170:
